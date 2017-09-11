@@ -5,6 +5,7 @@ var Schema = mongoose.Schema,
 
 
 var bookingSchema = new Schema({
+    email: String,
     startTime: Date,
     endTime: Date,
     restaurantId: ObjectId,

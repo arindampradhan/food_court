@@ -15,5 +15,5 @@
 
 
 ### TODO:
-* booking fixes via start and end
-* add userId to bookings, reviews, restaurant
+* [X] booking fixes via start and end
+* [X] add userId to bookings, reviews, restaurant

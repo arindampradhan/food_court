@@ -11,10 +11,11 @@ var schemaOptions = {
 };
 
 var restaurantSchema = new Schema({
-  name: String,
-  address: String,
-  totalCapacity: Number,
-  tables: [
+    email: String,
+    name: String,
+    address: String,
+    totalCapacity: Number,
+    tables: [
         { uuid: String, capacity: Number }
       ]
 }, schemaOptions);

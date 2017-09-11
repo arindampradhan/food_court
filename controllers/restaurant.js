@@ -6,6 +6,7 @@ var ObjectId = require('mongoose').Types.ObjectId;
  * POST /restaurant/add
  */
 exports.add = function(req, res) {
+    req.assert('email', 'Name cannot be blank').isEmail();
     req.assert('name', 'Name cannot be blank').notEmpty();
     req.assert('address', 'Address cannot be blank').notEmpty();
     var errors = req.validationErrors();
@@ -14,6 +15,7 @@ exports.add = function(req, res) {
         return res.status(405).json({'error': errors });
     }
     var restaurant = new Restaurant({
+        email: req.body.email,
         name : req.body.name,
         address : req.body.address,
         totalCapacity: 0

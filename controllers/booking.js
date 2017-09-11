@@ -5,6 +5,7 @@ var ObjectId = require('mongoose').Types.ObjectId;
  * POST /booking/add
  */
 exports.book  = function (req, res, next) {
+    req.assert('email', 'email cannot be blank').isEmail();
     req.assert('startTime', 'startTime cannot be blank').notEmpty();
     req.assert('endTime', 'endTime cannot be blank').notEmpty();
     req.assert('restaurantId', 'restaurantId cannot be blank').notEmpty();
@@ -18,6 +19,7 @@ exports.book  = function (req, res, next) {
     var booking = new Booking({
         startTime ,
         endTime,
+        email: req.body.email,
         restaurantId: req.body.restaurantId,
         uuid: req.body.tableuuid
     });
