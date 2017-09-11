@@ -11,6 +11,12 @@
 - **Database**: mongodb
 - **Authentication**: google,email
 
+
+## Requirements
+
+* Node > 6.0
+
+
 ### [Documentation](https://documenter.getpostman.com/view/1206388/food_cart/6taZjzw)
 
 - https://documenter.getpostman.com/view/1206388/food_cart/6taZjzw
@@ -25,3 +31,4 @@
     $ # go to http://localhost:3000
     $ # check https://documenter.getpostman.com/view/1206388/food_cart/6taZjzw
 ```
+
