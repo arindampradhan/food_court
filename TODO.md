@@ -17,3 +17,4 @@
 ### TODO:
 * [X] booking fixes via start and end
 * [X] add userId to bookings, reviews, restaurant
+* [X] Support pagination in booking and restaurant
